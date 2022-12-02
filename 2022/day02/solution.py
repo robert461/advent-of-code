@@ -1,5 +1,3 @@
-import functools as ft
-
 input_lines = open("day02/real_input.txt").read().strip().replace(" ", "").split("\n")
 
 # Solution 1
