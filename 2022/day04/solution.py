@@ -1,4 +1,6 @@
-import re
+import re, time
+
+start_time = time.perf_counter()
 
 input_lines = open("day04/real_input.txt").read().strip().split("\n")
 
@@ -36,3 +38,5 @@ solutions = get_count_of_fully_containing()
 
 print("Solution 1: ", solutions[0])
 print("Solution 2: ", solutions[1])
+
+print(f"Program executed in {(time.perf_counter() - start_time) * 1000 :f}ms")
