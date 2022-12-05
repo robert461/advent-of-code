@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class Solution {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
         long startTime = System.currentTimeMillis();
 
@@ -34,6 +34,6 @@ public class Solution {
 
         System.out.println("Program executed in " + (System.currentTimeMillis() - startTime) + "ms");
 		
-	}
+    }
 
 }
