@@ -16,12 +16,12 @@ def outcome_of(opponent_choice: chr, choice: chr) -> int:
 
         case _: return 3
 
-print("Solution 1: ", sum(
-        map(lambda a, _: a + _,
-        [sum(map(score_of, line[1])) for line in input_lines],
-        [sum(map(outcome_of, line[0], line[1])) for line in input_lines]
+print("Solution 1: ",
+        sum(
+            [sum(map(score_of, line[1])) for line in input_lines] +
+            [sum(map(outcome_of, line[0], line[1])) for line in input_lines]
         )
-    ))
+    )
 
 # Solution 2
 def ultra_top_secret_strategy_guide_for(opponent_choice: chr, choice: chr) -> chr:

@@ -16,7 +16,7 @@ def get_overlapping_of(a, b, c, d) -> int:
 
 
 # Fake Tail Recursion, replace GOTO with while True
-def get_count_of_fully_containing(fully_containing: int = 0, overlap: int = 0, index: int = 0) -> int:
+def generate_solutions(fully_containing: int = 0, overlap: int = 0, index: int = 0) -> int:
 
     while True:
 
@@ -34,7 +34,7 @@ def get_count_of_fully_containing(fully_containing: int = 0, overlap: int = 0, i
             index += 1
 
 
-solutions = get_count_of_fully_containing()
+solutions = generate_solutions()
 
 print("Solution 1: ", solutions[0])
 print("Solution 2: ", solutions[1])

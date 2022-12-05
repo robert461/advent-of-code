@@ -5,15 +5,11 @@ sum1, sum2 = 0, 0
 # Solution 1
 def get_priority_of(character) -> int:
 
-    unicode_subtract_value = 0
+    unicode_subtract_value = -38
 
     if character.islower():
 
         unicode_subtract_value = -96
-    
-    else:
-
-        unicode_subtract_value = -38
 
     return unicode_subtract_value + ord(u"" + character + "")
 
