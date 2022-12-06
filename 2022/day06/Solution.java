@@ -6,7 +6,7 @@ import java.nio.file.Path;
 
 public class Solution {
 
-    static Integer findMarkerRecursive(char[] dataStreamBuffer, Integer numberOfDisctinctCharacters) {
+    static Integer findMarkerOf(char[] dataStreamBuffer, Integer numberOfDisctinctCharacters) {
 
         Integer index = 0;
         Boolean hasNoEqual = false;
@@ -42,8 +42,8 @@ public class Solution {
 
         final char[] input_line = Files.readString(Path.of("day06\\real_input.txt")).toCharArray();
 
-        System.out.println("Solution 1: " + findMarkerRecursive(input_line, 4));
-        System.out.println("Solution 2: " + findMarkerRecursive(input_line, 14));
+        System.out.println("Solution 1: " + findMarkerOf(input_line, 4));
+        System.out.println("Solution 2: " + findMarkerOf(input_line, 14));
 
         System.out.println("Program executed in " + (System.currentTimeMillis() - startTime) + "ms");
 		
