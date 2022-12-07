@@ -40,8 +40,6 @@ public class Solution {
 
         currentlyUsedSpace = availableSpace - getDirectorySizeRecursive(root);
 
-        System.out.println(currentlyUsedSpace);
-
         return root;
     }
 
