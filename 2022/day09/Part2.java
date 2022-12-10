@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Set;
 
 public class Part2 {
+    // Note: Solution is not original but inspired by others
+    
     static final int numberOfKnots = 10;
 
     public static void main(String[] args) throws IOException {
