@@ -2,7 +2,7 @@
 
 Solutions of the [Advent of Code](https://adventofcode.com/2022/about) programming puzzles  
 
-No input files are included because of [this tweet by Eric Wastls](https://twitter.com/ericwastl/status/1465805354214830081)
+No input files are included because of [this tweet by Eric Wastl](https://twitter.com/ericwastl/status/1465805354214830081)
 
 ## 2022
 Solutions are written in...  
