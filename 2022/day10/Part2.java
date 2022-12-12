@@ -3,14 +3,11 @@ package day10;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Part2 {
     public static void main(String[] args) throws IOException {
-        final String[] input_lines =
-            Files.readString(Path.of("day10\\real_input.txt")).split("\n");
+        final String[] inputLines = Files.readString(Path.of("day10\\real_input.txt")).split("\n");
     
         LinkedList<Integer> queue = new LinkedList<>();
         Integer xRegister = 1;
@@ -18,10 +15,10 @@ public class Part2 {
         Integer crtCounter = 0;
         Boolean hasFinishedExecuting = true;
 
-        while (cpuCounter <= input_lines.length - 1) {
+        while (cpuCounter <= inputLines.length - 1) {
             if (queue.size() == 0) {
                 // begin executing
-                String[] line = input_lines[cpuCounter].split(" ");
+                String[] line = inputLines[cpuCounter].split(" ");
                 String command = line[0].strip();
 
                 if (command.equals("addx"))

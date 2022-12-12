@@ -7,8 +7,7 @@ import java.util.LinkedList;
 
 public class Part1 {
     public static void main(String[] args) throws IOException {
-        final String[] input_lines =
-            Files.readString(Path.of("day10\\real_input.txt")).split("\n");
+        final String[] inputLines = Files.readString(Path.of("day10\\real_input.txt")).split("\n");
         
         LinkedList<Integer> queue = new LinkedList<>();
         Integer xRegister = 1;
@@ -24,7 +23,7 @@ public class Part1 {
                 xRegister += queue.pop();
                 counter--;
             } else {
-                String[] line = input_lines[counter].split(" ");
+                String[] line = inputLines[counter].split(" ");
                 String command = line[0].strip();
 
                 if (command.equals("addx")) queue.add(Integer.valueOf(line[1].strip()));

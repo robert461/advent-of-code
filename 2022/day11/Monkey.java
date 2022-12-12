@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Monkey {
     public List<Long> items;
-    public int operationTypeId = 0;
+    public int operationTypeId ;
     public int operationValue;
     public long divideValue;
     public int monkeyIdTrue;
